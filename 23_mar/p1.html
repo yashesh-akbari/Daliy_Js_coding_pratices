@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" id="formdata">
+      <input type="text" id="contextdata" />
+      <button>submit</button>
+    </form>
+    <script>
+      document.getElementById("formdata").addEventListener("submit", (num) => {
+        num = parseInt(document.getElementById("contextdata").value);
+        if (isNaN(num)) {
+          console.log("Enter a vaild number");
+        } else {
+          console.log("Celsius to Fahrenheit:");
+          console.log((num * 9) / 5 + 32);
+        }
+      });
+    </script>
+  </body>
+</html>

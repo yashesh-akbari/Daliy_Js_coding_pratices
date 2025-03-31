@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" id="str">
+      <input type="text" id="context" />
+      <button type="submit">check</button>
+    </form>
+    <script>
+      document.querySelector("#str").addEventListener("submit", (str) => {
+        str = document.querySelector("#context").value;
+        let temp = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+          temp = temp + str[i];
+        }
+        console.log(temp);
+        if (str === temp) {
+          console.log("the string is palindrome");
+        } else {
+          console.log("the string is not palindrome");
+        }
+      });
+    </script>
+  </body>
+</html>

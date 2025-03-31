@@ -1,0 +1,12 @@
+{
+  "name": "28_mar",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "yashesh",
+  "type": "module",
+  "main": "p1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
